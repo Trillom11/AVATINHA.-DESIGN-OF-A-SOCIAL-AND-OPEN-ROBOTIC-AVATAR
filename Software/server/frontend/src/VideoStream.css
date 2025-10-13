@@ -1,0 +1,133 @@
+/* Contenedor principal */
+.viewer-container {
+  background: linear-gradient(to bottom, #111, #222);
+  color: white;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+/* Boton Volver */
+.volver {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 1000;
+  width: auto;
+  display: inline-block;
+}
+
+/* Layout de la transmision */
+.stream-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+/* Video stream */
+.video-stream {
+  width: 90%;
+  max-width: 720px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Contenedor del joystick */
+.joystick-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+  border: 2px dashed #00ffcc;
+  border-radius: 50%;
+}
+
+/* Contenedor del panel de emojis y toggle lateral */
+.emoji-toggle-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+/* Boton para desplegar panel de emojis */
+.emoji-toggle {
+  background: #333;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Panel flotante de emojis */
+.emoji-float-panel {
+  background: #444;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Estilos para los emojis */
+.emoji-float-panel span {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Contenedor de controles inferiores */
+.bottom-controls {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botones de control */
+.icon-button {
+  background: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Estado muted */
+.icon-button.muted {
+  background: #555;
+}
+
+.audio-activity-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.audio-activity-fill {
+  height: 100%;
+  width: 0%;
+  background-color: limegreen;
+  transition: width 0.1s linear;
+}

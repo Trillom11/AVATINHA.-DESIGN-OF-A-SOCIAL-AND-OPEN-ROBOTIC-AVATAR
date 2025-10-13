@@ -1,0 +1,56 @@
+.usuario-detalle {
+    min-height: 100vh;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .titulo-usuario {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .columnas {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .columna {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 280px;
+  }
+  
+  .columna h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+  }
+
+  .volver {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    z-index: 1000;
+    width: auto;
+    display: inline-block;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+  }
+  

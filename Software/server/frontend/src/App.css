@@ -1,0 +1,16 @@
+
+.App {
+    background-image: url('../public/burbujas.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login, .dashboard {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
